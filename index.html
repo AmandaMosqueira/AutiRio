@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutiRio - Inclusão e Acolhimento</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>AutiRio 🧩</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#forum">Fórum</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+          <li><a href="#prestadores">Prestadores</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <button id="modoAcessivel" class="acessibilidade-btn">Modo Acessível</button>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Bem-vindo à AutiRio</h2>
+      <p>Uma plataforma acolhedora e acessível para pessoas no espectro autista e seus familiares.</p>
+    </div>
+  </section>
+
+  <section id="sobre" class="section">
+    <div class="container">
+      <h3>Sobre a AutiRio</h3>
+      <p>A AutiRio é uma iniciativa que busca oferecer recursos, apoio e um espaço de troca para pessoas com Transtorno do Espectro Autista. Acreditamos na inclusão, na empatia e no poder da comunidade.</p>
+    </div>
+  </section>
+
+  <section id="forum" class="section light">
+    <div class="container">
+      <h3>Fórum</h3>
+      <p>Participe de discussões, compartilhe experiências e encontre apoio em nossa comunidade acolhedora.</p>
+    </div>
+  </section>
+
+  <section id="duvidas" class="section">
+    <div class="container">
+      <h3>Dúvidas Frequentes</h3>
+      <p>Encontre respostas para as perguntas mais comuns sobre o espectro autista, direitos, terapias e mais.</p>
+    </div>
+  </section>
+
+  <section id="prestadores" class="section light">
+    <div class="container">
+      <h3>Prestadores</h3>
+      <p>Encontre profissionais especializados: terapeutas, psicólogos, educadores e muito mais.</p>
+    </div>
+  </section>
+
+  <section id="testemunhos" class="section">
+    <div class="container">
+      <h3>Testemunhos</h3>
+      <div class="testemunhos-grid">
+        <div class="testemunho">
+          <p>🌟 “A AutiRio me ajudou a entender melhor meu filho e encontrar apoio de outros pais.”</p>
+          <span>– Maria, mãe do Lucas</span>
+        </div>
+        <div class="testemunho">
+          <p>🧩 “Me sinto acolhido aqui. O fórum é calmo, claro e cheio de empatia.”</p>
+          <span>– João, usuário no espectro</span>
+        </div>
+        <div class="testemunho">
+          <p>👩‍⚕️ “Recomendo aos meus pacientes. É um ambiente digital respeitoso e seguro.”</p>
+          <span>– Dra. Helena, terapeuta ocupacional</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 AutiRio. Todos os direitos reservados.</p>
+      <p>Contato: contato@autirio.org</p>
+    </div>
+  </footer>
+
+  <button id="btnTopo" title="Voltar ao topo">⬆️</button>
+
+  <script>
+    // Modo acessível
+    document.getElementById("modoAcessivel").addEventListener("click", function() {
+      document.body.style.backgroundColor = "#000";
+      document.body.style.color = "#FFF";
+      document.body.style.fontSize = "18px";
+      const sections = document.querySelectorAll('.section, .hero, footer, header');
+      sections.forEach(s => s.style.backgroundColor = "#222");
+    });
+
+    // Voltar ao topo
+    const btnTopo = document.getElementById("btnTopo");
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btnTopo.style.display = "block";
+      } else {
+        btnTopo.style.display = "none";
+      }
+    };
+
+    btnTopo.addEventListener("click", function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
