@@ -150,3 +150,16 @@ footer {
 #btnTopo:hover {
   background-color: #1abc9c;
 }
+
+.instagram-icon {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.instagram-icon:hover {
+    transform: scale(1.1);
+}
