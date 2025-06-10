@@ -1,161 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AutiRio - Inclusão e Acolhimento</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <title>AutiRio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>AutiRio 🧩</h1>
-      <nav>
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#forum">Fórum</a></li>
-          <li><a href="#duvidas">Dúvidas</a></li>
-          <li><a href="#prestadores">Prestadores</a></li>
-          <li><a href="#objetivo">Objetivo</a></li>
-          <li><a href="#o que será oferecido">O que será oferecido</a></li>
-         <li><a href="#assinaturas para usuários">Assinaturas para usuários</a></li>
-        </ul>
-      </nav>
-    </div>
-    <!-- Ícone do Instagram -->
-  <a href="https://www.instagram.com/autiriooficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram AutiRio" class="instagram-icon">
-  </a>
-  </header>
+    <header>
+        <h1>AutiRio</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#forum">Fórum</a></li>
+                <li><a href="#duvidas">Dúvidas</a></li>
+                <li><a href="#prestadores">Prestadores</a></li>
+                <li><a href="#testemunhos">Testemunhos</a></li>
+                <li><a href="#assinaturas">Assinaturas</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><button onclick="alternarAcessibilidade()">Modo Acessível</button></li>
+            </ul>
+        </nav>
+        <a href="https://www.instagram.com/autiriooficial" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram AutiRio" class="instagram-icon">
+        </a>
+    </header>
 
-  <button id="modoAcessivel" class="acessibilidade-btn">Modo Acessível</button>
+    <main>
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Plataforma voltada para pessoas do espectro autista.</p>
+        </section>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Bem-vindo à AutiRio</h2>
-      <p>Nós somos uma plataforma inovadora que conecta pessoas dentro do espectro autista e com necessidades sensoriais específicas a produtos e serviços adaptados às suas necessidades.</p>
-    </div>
-  </section>
+        <section id="forum">
+            <h2>Fórum</h2>
+            <p>Espaço para discussão e troca de experiências.</p>
+        </section>
 
-  <section id="sobre" class="section">
-    <div class="container">
-      <h3>Sobre a AutiRio</h3>
-      <p>A AutiRio é uma iniciativa que busca oferecer recursos, apoio e um espaço de troca para pessoas com Transtorno do Espectro Autista. Acreditamos na inclusão, na empatia e no poder da comunidade.</p>
-    </div>
-  </section>
+        <section id="duvidas">
+            <h2>Dúvidas</h2>
+            <p>Respostas para perguntas frequentes.</p>
+        </section>
 
-<section id="objetivo" class="section light">
-    <div class="container">
-      <h3>Objetivo</h3>
-      <p>Criação de um aplicativo e ser uma plataforma inovadora, voltado para pessoas do espectro autista e seus familiares, tendo em vista que ainda é um mercado em expansão e pouco explorado. Facilitar o cotidiano de pessoas com espectro autista ou com outras particularidades, e de seus familiares. Considerando que hoje em dia não existe muita acessibilidade, nossa plataforma promove o bem-estar e a integração social desse público.</p>
-    </div>
-  </section>
+        <section id="prestadores">
+            <h2>Prestadores</h2>
+            <p>Lista de profissionais especializados.</p>
+        </section>
 
-<section id="o que sera oferecido" class="section">
-    <div class="container">
-      <h3>O que será oferecido</h3>
-      <p>Disponibilizar acessibilidade e conforto para as necessidades específicas de cada usuário;
-Informar sobre conteúdos educativos e atendimento personalizado;
-Trazer conforto e inclusão adaptando as diferentes formas de interação e comunicação;
-Oferecer suporte e orientação para usuário e seus familiares;  
-Propor na plataforma produtos e serviços;
-Conter uma anuidade, não obrigatória, para terem acesso a descontos em produtos e serviços na plataforma;
-Aplicativo Gratuito para usuários simples;
-A cobrança no valor de R$ 4,99 por usuário Premium (Acesso a fórum, descontos e etc);
-A cobrança no valor de R$ 29,90 por lojista (basic).</p>
-    </div>
-  </section>
+        <section id="testemunhos">
+            <h2>Testemunhos</h2>
+            <p>Depoimentos de usuários da plataforma.</p>
+        </section>
 
-<section id="assinaturas" class="section light">
-  <div class="container">
-    <h3>Assinaturas para usuários</h3>
-    <p>O acesso ao AutiRio é totalmente gratuito para todos os usuários.</p>
-    <p>No entanto, oferecemos planos de assinatura para quem deseja benefícios adicionais:</p>
-      
-    <ul>
-        <li><strong>Plano Gratuito:</strong> Não inclui acesso a cupons de desconto, sorteio de brindes e a pontuação mensal para poder trocar por brindes .</li>
-        <li><strong>Plano Básico:</strong> R$ 4,99/mês - Inclui sorteio de brindes, cupons de descontos de valores baixos, sistema de pontuação a cada renovação mensal podendo adquirir até 250 pontos podendo trocar por brindes dentro do aplicativo e o plano tem duração de 30 dias.</li>
-        <li><strong>Plano Clássico:</strong> R$ 10,90/mês - Inclui  sorteio de brindes, cupons de descontos com valores medianos, sistema de pontuação a cada renovação mensal podendo adquirir até 500 pontos podendo trocar por brindes dentro do aplicativo e o plano tem duração de 30 dias.</li>
-        <li><strong>Plano Premium:</strong> R$ 14,90/mês - Inclui  sorteio de brindes, cupons de descontos com valores alto, sistema de pontuação a cada renovação mensal podendo adquirir até 1000 pontos podendo trocar por brindes dentro do aplicativo e o plano tem duração de 30 dias.</li>
-    </ul>
+        <section id="assinaturas">
+            <h2>Assinaturas</h2>
+            <p>O acesso ao AutiRio é totalmente gratuito para todos os usuários.</p>
+            <p>No entanto, oferecemos planos de assinatura para quem deseja benefícios adicionais:</p>
 
-    <p>Todos os recursos essenciais continuarão disponíveis gratuitamente. A assinatura é opcional e serve para ampliar ainda mais sua experiência na plataforma.</p>
-</section>
+            <ul>
+                <li>
+                    <strong>Plano Gratuito:</strong> Acesso ao fórum, conteúdos informativos e rede de apoio.
+                </li>
+                <li>
+                    <strong>Plano Conexão:</strong> R$ 9,90/mês - Inclui lives com especialistas e eventos exclusivos.
+                    <br><a href="login.html" class="btn-assinar">Assinar</a>
+                </li>
+                <li>
+                    <strong>Plano Avançado:</strong> R$ 19,90/mês - Inclui acompanhamento com profissionais parceiros e área de cursos.
+                    <br><a href="login.html" class="btn-assinar">Assinar</a>
+                </li>
+            </ul>
 
-  <section id="forum" class="section">
-    <div class="container">
-      <h3>Fórum</h3>
-      <p>No nosso fórum você poderá participar de discussões, compartilhar experiências e encontrar apoio em nossa comunidade acolhedora.</p>
-    </div>
-  </section>
+            <p>Todos os recursos essenciais continuarão disponíveis gratuitamente. A assinatura é opcional e serve para ampliar ainda mais sua experiência na plataforma.</p>
+        </section>
 
-  <section id="duvidas" class="section light">
-    <div class="container">
-      <h3>Dúvidas Frequentes</h3>
-      <p>Encontre respostas para as perguntas mais comuns sobre o espectro autista, direitos, terapias e mais.</p>
-    </div>
-  </section>
+        <section id="login">
+            <h2>Entrar na plataforma</h2>
+            <form>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="senha">Senha:</label><br>
+                <input type="password" id="senha" name="senha" required><br><br>
+                <button type="submit">Entrar</button>
+                <p>Não tem conta? <a href="#">Cadastre-se</a></p>
+            </form>
+        </section>
+    </main>
 
-  <section id="prestadores" class="section">
-    <div class="container">
-      <h3>Prestadores</h3>
-      <p>Aqui você encontrará profissionais especializados: terapeutas, psicólogos, educadores, estabelecimentos adaptados, nutricionista e etc.</p>
-    </div>
-  </section>
+    <button id="voltar-topo" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
 
-  <section id="testemunhos" class="section light">
-    <div class="container">
-      <h3>Testemunhos</h3>
-      <div class="testemunhos-grid">
-        <div class="testemunho">
-          <p>🌟 “A AutiRio me ajudou a entender melhor meu filho e encontrar apoio de outros pais.”</p>
-          <span>– Maria, mãe do Lucas</span>
-        </div>
-        <div class="testemunho">
-          <p>🧩 “Me sinto acolhido aqui. O fórum é calmo, claro e cheio de empatia.”</p>
-          <span>– João, usuário no espectro</span>
-        </div>
-        <div class="testemunho">
-          <p>👩‍⚕️ “Recomendo aos meus pacientes. É um ambiente digital respeitoso e seguro.”</p>
-          <span>– Dra. Helena, terapeuta ocupacional</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 AutiRio. Todos os direitos reservados.</p>
-      <p>Contato: rioauti@gmail.com</p>
-    </div>
-  </footer>
-
-  <button id="btnTopo" title="Voltar ao topo">⬆️</button>
-
-  <script>
-    // Modo acessível
-    document.getElementById("modoAcessivel").addEventListener("click", function() {
-      document.body.style.backgroundColor = "#000";
-      document.body.style.color = "#FFF";
-      document.body.style.fontSize = "18px";
-      const sections = document.querySelectorAll('.section, .hero, footer, header');
-      sections.forEach(s => s.style.backgroundColor = "#222");
-    });
-
-    // Voltar ao topo
-    const btnTopo = document.getElementById("btnTopo");
-
-    window.onscroll = function() {
-      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        btnTopo.style.display = "block";
-      } else {
-        btnTopo.style.display = "none";
-      }
-    };
-
-    btnTopo.addEventListener("click", function() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  </script>
+    <script>
+        function alternarAcessibilidade() {
+            document.body.classList.toggle('acessivel');
+        }
+    </script>
 </body>
 </html>
